@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+img {
+	height:50px;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	background-color: lightcyan;
+	background-image: url("https://newevolutiondesigns.com/images/freebies/nature-hd-background-2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-top: 0.5rem;
+}
+
+.text {
+	margin-top: 0;
+	font-size: 1.2rem;
+	letter-spacing: 0.05em;
+}
+
+.far {
+	font-size: 3rem;
+}
+
+.fas {
+	padding: 0.7rem;
+}
+
+/* make into a grid */
+main {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	background-color: black;
+	opacity: 0.5;
+	height: 100vh;
+	width: 12%;
+	padding: 0.5rem;
+}
+
+.header-text {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.nav-items {
+	padding: 0.7rem;
+	filter: brightness(100%);
+}
+
+.nav-items:hover {
+	text-decoration: underline;
+	filter: brightness(80%);
+}
+
+.sign {
+	border-top: groove #fff;
+	border-bottom: groove #fff;
+	border-left: groove #fff;
+	border-right: none;
+	border-radius: 15px 60px 60px 15px;
+	padding: 0.5rem;
+	width: 300px;
+}
+
+.sign:hover {
+	background: black;
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+/* larger screen */
+@media screen and (max-width: 1000px) {
+	nav {
+		width: 18%;
+	}
+
+/* landscape mobile */
+@media screen and (max-width: 760px) {
+	nav {
+		width: 20%;
+		font-size: 0.7rem;
+		padding: 0;
+	}	
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.text {
+		font-size: 0.7rem;
+	}
+
+/* mobile */
+@media screen and (max-width: 410px) {
+	.sign {
+		width: 80%;
+		padding: 1rem;
+	}
+
+	nav {
+		width: 25%;
+	}
+
+	.nav-items {
+		padding:;
+	}
+
+	
+}
+
